@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Creative Portfolio | AIGC Visual Design</title>
+  <meta name="description" content="AIGC视觉设计与品牌商业海报作品集">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      background: #F7E9D5;
+      color: #75401F;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(117, 64, 31, 0.15);
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      opacity: 0.65;
+    }
+
+    .hero {
+      min-height: 570px;
+      padding: 110px 10% 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .eyebrow {
+      font-size: 14px;
+      letter-spacing: 4px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 9vw, 100px);
+      line-height: 1.05;
+      letter-spacing: -3px;
+      margin-bottom: 25px;
+    }
+
+    .hero h2 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      max-width: 560px;
+      font-size: 16px;
+      opacity: 0.8;
+    }
+
+    .hero-button {
+      display: inline-block;
+      width: fit-content;
+      margin-top: 35px;
+      padding: 13px 28px;
+      background: #75401F;
+      color: #F7E9D5;
+      letter-spacing: 1px;
+      font-size: 13px;
+    }
+
+    section {
+      padding: 85px 10%;
+    }
+
+    .section-label {
+      font-size: 13px;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+      opacity: 0.75;
+    }
+
+    .section-title {
+      font-size: 38px;
+      margin-bottom: 35px;
+    }
+
+    .about {
+      background: rgba(255, 255, 255, 0.28);
+    }
+
+    .about p {
+      max-width: 720px;
+      font-size: 17px;
+    }
+
+    .project {
+      margin-bottom: 75px;
+    }
+
+    .project h3 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .project-desc {
+      font-size: 14px;
+      margin-bottom: 22px;
+      opacity: 0.8;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .work-card {
+      min-height: 260px;
+      background: #E9D5BC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 25px;
+      border: 1px solid rgba(117, 64, 31, 0.12);
+    }
+
+    .work-card span {
+      font-size: 14px;
+      letter-spacing: 2px;
+      opacity: 0.75;
+    }
+
+    .work-card.wide {
+      grid-column: 1 / -1;
+      min-height: 320px;
+    }
+
+    .project-note {
+      margin-top: 14px;
+      font-size: 13px;
+      opacity: 0.7;
+    }
+
+    .contact {
+      background: #75401F;
+      color: #F7E9D5;
+      text-align: center;
+    }
+
+    .contact .section-title {
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      opacity: 0.85;
+    }
+
+    footer {
+      padding: 25px 10%;
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      nav {
+        gap: 16px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 470px;
+        padding: 75px 7%;
+      }
+
+      section {
+        padding: 65px 7%;
+      }
+
+      .section-title {
+        font-size: 30px;
+      }
+
+      .work-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .work-card.wide {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">MY CREATIVE</div>
+    <nav>
+      <a href="#about">关于我</a>
+      <a href="#works">作品展示</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">AIGC VISUAL DESIGN · 2026</div>
+      <h1>MY CREATIVE<br>PORTFOLIO</h1>
+      <h2>品牌视觉与商业海报设计</h2>
+      <p>
+        探索人工智能与视觉设计的结合，
+        用创意呈现品牌的独特魅力。
+      </p>
+      <a class="hero-button" href="#works">EXPLORE MY WORKS</a>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-label">ABOUT</div>
+      <h2 class="section-title">关于我的创作</h2>
+      <p>
+        专注于AIGC视觉设计与品牌商业宣传内容创作。
+        通过AI图像生成、视觉构思与平面排版，
+        探索不同品牌风格的表达方式。
+        <br><br>
+        作品涵盖产品视觉、品牌主视觉及社交媒体宣传设计。
+      </p>
+    </section>
+
+    <section id="works">
+      <div class="section-label">SELECTED WORKS</div>
+      <h2 class="section-title">作品展示</h2>
+
+      <div class="project">
+        <h3>01 · AURELLE</h3>
+        <div class="project-desc">
+          护肤品牌视觉设计 · 产品商业海报
+        </div>
+        <div class="work-grid">
+          <div class="work-card">
+            <span>AURELLE<br>PREMIUM VISUAL</span>
+          </div>
+          <div class="work-card">
+            <span>AURELLE<br>NATURAL STYLE</span>
+          </div>
+          <div class="work-card wide">
+            <span>AURELLE<br>MINIMALIST STYLE</span>
+          </div>
+        </div>
+        <p class="project-note">
+          高端奢华、自然植物与现代极简三种视觉风格探索。
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>02 · MORNING DEW COFFEE</h3>
+        <div class="project-desc">
+          精品咖啡品牌 · 模拟客户商业项目
+        </div>
+        <div class="work-grid">
+          <div class="work-card">
+            <span>BRAND KEY VISUAL</span>
+          </div>
+          <div class="work-card">
+            <span>PRODUCT PROMOTION</span>
+          </div>
+          <div class="work-card wide">
+            <span>SOCIAL MEDIA PROMOTION</span>
+          </div>
+        </div>
+        <p class="project-note">
+          品牌主视觉、产品宣传与社交媒体推广设计。
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-label">GET IN TOUCH</div>
+      <h2 class="section-title">THANK YOU</h2>
+      <p>感谢浏览我的个人作品集</p>
+      <p>期待更多创意与设计合作</p>
+    </section>
+  </main>
+
+  <footer>
+    MY CREATIVE PORTFOLIO · 2026
+  </footer>
+
+</body>
+</html>
